@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مولد HSG QR - Advanced QR Generator</title>
+    <title> HSG QR - Advanced QR Generator</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.min.js"></script>
@@ -675,6 +675,33 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+      .copyright {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.copyright p:first-child {
+    font-weight: 600;
+}
+
+.copyright p:last-child {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .copyright {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
+      }
+      
     </style>
 </head>
 <body>
@@ -1091,5 +1118,12 @@
             });
         });
     </script>
+  <!-- حقوق النشر -->
+        <div class="copyright animate-on-scroll" data-aos="fade-up">
+            <p>© 2025 جميع الحقوق محفوظة</p>
+            <p>إتقانٌ يسبق الحديث HSG</p>
+        </div>
+  </div>
+  
 </body>
 </html>
